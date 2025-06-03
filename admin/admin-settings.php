@@ -1,16 +1,4 @@
 <?php
-/**
- * Plugin Name: Daily Text Display
- * Plugin URI: https://github.com/yamashin-dev/wp-dtd-plugin
- * Description: 曜日ごとに異なるテキストを表示するプラグイン
- * Version: 1.0
- * Author: やましん
- * Author URI: https://x.com/Yama_Shin_0216
- * License: GPL2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: daily-text-display
- * Domain Path: /languages
- */
 
 // 直接アクセス禁止
 if (!defined('ABSPATH')) {
