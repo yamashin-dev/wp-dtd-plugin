@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name: Daily Text Display
  * Plugin URI: https://github.com/yamashin-dev/wp-dtd-plugin
