@@ -1,0 +1,225 @@
+.daily-text-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* デザインパターン1: シンプル */
+.daily-text-wrapper.pattern1 {}
+
+.daily-text-wrapper.pattern1 .daily-text-content {
+  text-align: center;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);
+}
+
+.daily-text-wrapper.pattern1 .daily-text-title {
+  padding: 4px 12px;
+  background: var(--dtd-accent-color);
+}
+
+.daily-text-wrapper.pattern1 .daily-text-title span {
+  color: var(--dtd-accent-color);
+  font-weight: 600;
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+.daily-text-wrapper.pattern1 .daily-text-message {
+  padding: 4px 12px;
+  background: var(--dtd-main-color);
+}
+
+.daily-text-wrapper.pattern1 .daily-text-message span {
+  color: var(--dtd-main-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+/* デザインパターン2: モダン */
+.daily-text-wrapper.pattern2 {
+  background: linear-gradient(to right, var(--dtd-main-color), #fff);
+  padding: 8px;
+}
+
+.daily-text-wrapper.pattern2 .daily-text-content {
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.daily-text-wrapper.pattern2 .daily-text-title span {
+  position: relative;
+}
+
+.daily-text-wrapper.pattern2 .daily-text-title span::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 150%;
+  background: var(--dtd-accent-color);
+}
+
+.daily-text-wrapper.pattern2 .daily-text-title span {
+  color: #000;
+  font-weight: 600;
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+.daily-text-wrapper.pattern2 .daily-text-message {
+  padding: 4px 20px;
+}
+
+.daily-text-wrapper.pattern2 .daily-text-message span {
+  color: #000;
+}
+
+/* デザインパターン3: クラシック */
+.daily-text-wrapper.pattern3 {
+  border: 2px solid var(--dtd-main-color);
+  background: #fff;
+}
+
+.daily-text-wrapper.pattern3 .daily-text-content {
+  text-align: center;
+}
+
+.daily-text-wrapper.pattern3 .daily-text-title {
+  color: var(--dtd-accent-color);
+  font-style: italic;
+  font-weight: 600;
+  padding: 2px 12px;
+}
+
+.daily-text-wrapper.pattern3 .daily-text-message {
+  padding: 2px 12px;
+}
+
+/* デザインパターン4: ミニマル */
+.daily-text-wrapper.pattern4 {
+  padding: 8px;
+  background: var(--dtd-main-color);
+}
+
+.daily-text-wrapper.pattern4 .daily-text-content {
+  display: flex;
+  justify-content: center;
+
+}
+
+.daily-text-wrapper.pattern4 .daily-text-title {
+  color: var(--dtd-accent-color);
+  font-weight: 600;
+}
+
+.daily-text-wrapper.pattern4 .daily-text-title::after {
+  content: "：";
+}
+
+.daily-text-wrapper.pattern4 .daily-text-message span {
+  color: var(--dtd-main-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+/* デザインパターン5: ボーダー */
+.daily-text-wrapper.pattern5 {
+  background-size: auto auto;
+  background-color: var(--dtd-main-color);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, color-mix(in srgb, black 30%, var(--dtd-main-color)) 10px, color-mix(in srgb, black 30%, var(--dtd-main-color)) 20px)
+}
+
+.daily-text-wrapper.pattern5 .daily-text-content {
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+}
+
+.daily-text-wrapper.pattern5 .daily-text-title {
+  background-size: auto auto;
+  background-color: var(--dtd-accent-color);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, color-mix(in srgb, white 30%, var(--dtd-accent-color)) 10px, color-mix(in srgb, white 30%, var(--dtd-accent-color)) 20px);
+  border-radius: 40px;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+.daily-text-wrapper.pattern5 .daily-text-title span {
+  font-weight: 600;
+  color: var(--dtd-accent-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+.daily-text-wrapper.pattern5 .daily-text-message {
+  margin: auto 0;
+}
+
+.daily-text-wrapper.pattern5 .daily-text-message span {
+  color: var(--dtd-main-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+
+/* デザインパターン6: グラデーション */
+.daily-text-wrapper.pattern6 {
+  background: linear-gradient(45deg, var(--dtd-main-color), var(--dtd-accent-color));
+  padding: 8px 12px;
+}
+
+.daily-text-wrapper.pattern6 .daily-text-content {
+  color: linear-gradient(45deg, var(--dtd-main-color), var(--dtd-accent-color));
+  filter: invert(100%) grayscale(100%) contrast(100);
+  display: flex;
+  justify-content: center;
+}
+
+.daily-text-wrapper.pattern6 .daily-text-title span {
+  font-weight: bold;
+}
+
+.daily-text-wrapper.pattern6 .daily-text-title span::after {
+  content: "：";
+}
+
+/* デザインパターン7: ニューモフィズム */
+.daily-text-wrapper.pattern7 {
+  padding: 8px 0;
+  background: var(--dtd-main-color);
+}
+
+.daily-text-wrapper.pattern7 .daily-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dtd-main-color);
+  border-radius: 3px;
+  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 8px 16px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.daily-text-wrapper.pattern7 .daily-text-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dtd-accent-color);
+  border-radius: 3px;
+  box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+.daily-text-wrapper.pattern7 .daily-text-title span {
+  font-weight: 600;
+  color: var(--dtd-accent-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
+
+.daily-text-wrapper.pattern7 .daily-text-message {
+  margin: auto 0;
+}
+
+.daily-text-wrapper.pattern7 .daily-text-message span {
+  color: var(--dtd-main-color);
+  filter: invert(100%) grayscale(100%) contrast(100);
+}
