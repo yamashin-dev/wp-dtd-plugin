@@ -335,7 +335,7 @@ function dtd_admin_page()
                     'pattern4' => 'ミニマル',
                     'pattern5' => 'ボーダー',
                     'pattern6' => 'グラデーション',
-                    'pattern7' => 'シャドウ'
+                    'pattern7' => 'ニューモフィズム'
                   );
                   ?>
                   <select name="dtd_design_pattern" id="dtd-design-pattern">
